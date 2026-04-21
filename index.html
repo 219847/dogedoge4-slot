@@ -463,7 +463,7 @@ spinBtn.addEventListener('click', () => {
   ctx.fillText('SPINNING...', 300, 200);
 
   const grid = generateSpinGrid();
-
+  spinBtn.disabled=true;
   setTimeout(() => {
     const payout = calculateTotalPayout(grid);
     const scaledPayout = payout * (bet / 40);
